@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaLink Ingeniería</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#0A2540;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#00A3FF;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00A3FF;
+}
+
+.btn{
+    background:#0066FF;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(10,37,64,.8), rgba(10,37,64,.8)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    color:white;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn-secondary{
+    background:transparent;
+    border:2px solid white;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#0A2540;
+    font-size:40px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0A2540;
+    margin-bottom:15px;
+}
+
+.about{
+    background:#0A2540;
+    color:white;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#081B2E;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Nova<span>Link</span> Ingeniería
+</div>
+
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+<a href="#" class="btn">Cotizar</a>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>Soluciones Integrales en Telecomunicaciones e Infraestructura Tecnológica</h1>
+
+<p>
+Diseñamos, implementamos y administramos soluciones de conectividad para empresas, hogares e instituciones.
+</p>
+
+<div class="hero-buttons">
+<a href="#" class="btn">Solicitar Cotización</a>
+<a href="#" class="btn btn-secondary">WhatsApp</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="servicios">
+
+<div class="section-title">
+<h2>Nuestros Servicios</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>🌐 Redes Empresariales</h3>
+<p>Implementación y administración de redes LAN, WLAN y VLAN.</p>
+</div>
+
+<div class="card">
+<h3>🔌 Cableado Estructurado</h3>
+<p>Diseño e instalación de infraestructura certificada.</p>
+</div>
+
+<div class="card">
+<h3>📡 Fibra Óptica</h3>
+<p>Empalmes, instalación y mantenimiento de enlaces ópticos.</p>
+</div>
+
+<div class="card">
+<h3>📹 CCTV</h3>
+<p>Sistemas de videovigilancia para hogares y empresas.</p>
+</div>
+
+<div class="card">
+<h3>💻 Soporte TI</h3>
+<p>Mantenimiento preventivo y correctivo de equipos.</p>
+</div>
+
+<div class="card">
+<h3>📊 Consultoría Tecnológica</h3>
+<p>Optimización y diagnóstico de infraestructura tecnológica.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="nosotros">
+
+<h2>Sobre NovaLink Ingeniería</h2>
+
+<p>
+Somos una empresa enfocada en telecomunicaciones, infraestructura tecnológica y soluciones de conectividad para impulsar el crecimiento digital de nuestros clientes.
+</p>
+
+</section>
+
+<section class="contact" id="contacto">
+
+<div class="section-title">
+<h2>Contáctanos</h2>
+</div>
+
+<p>📍 Bogotá, Colombia</p>
+<p>📧 contacto@novalinkingenieria.com</p>
+<p>📞 +57 300 000 0000</p>
+
+</section>
+
+<footer>
+© 2026 NovaLink Ingeniería - Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
